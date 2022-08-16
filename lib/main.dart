@@ -51,36 +51,38 @@ class _ppostState extends State<ppost> {
             ),
           ),
         ),
-        body: Column(children: <Widget>[
-          Container(
-            width: double.infinity,
-            alignment: Alignment.center,
-            child: Text(
-              _fun,
-              textAlign: TextAlign.center,
-              // ignore: prefer_const_constructors
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-                color: Color.fromARGB(247, 31, 31, 31),
-                height: 3,
+        body: Column(
+          children: <Widget>[
+            Container(
+              width: double.infinity,
+              alignment: Alignment.center,
+              child: Text(
+                _fun,
+                textAlign: TextAlign.center,
+                // ignore: prefer_const_constructors
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Color.fromARGB(247, 100, 53, 53),
+                  height: 2,
+                ),
               ),
             ),
-          ),
-          SizedBox(
-              height: 30,
-              width: 150,
-              child: TextButton(
-                onPressed: getjokes,
-                child: Text('punny me'),
-                style: TextButton.styleFrom(
-                  padding: EdgeInsets.all(10),
-                  primary: Color.fromARGB(255, 205, 200, 212),
-                  textStyle: const TextStyle(fontSize: 15),
-                  backgroundColor: Color.fromARGB(240, 4, 18, 9),
-                ),
-              ))
-        ]),
+            SizedBox(
+                height: 50,
+                width: 200,
+                child: TextButton(
+                  onPressed: getjokes,
+                  child: Text('punny me'),
+                  style: TextButton.styleFrom(
+                    padding: EdgeInsets.all(3),
+                    primary: Color.fromARGB(255, 248, 248, 248),
+                    textStyle: const TextStyle(fontSize: 15),
+                    backgroundColor: Color.fromARGB(239, 7, 122, 47),
+                  ),
+                )),
+          ],
+        ),
       ),
     );
   }
