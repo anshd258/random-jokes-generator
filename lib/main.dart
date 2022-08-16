@@ -73,7 +73,7 @@ class _ppostState extends State<ppost> {
                 width: 200,
                 child: TextButton(
                   onPressed: getjokes,
-                  child: Text('punny me'),
+                  child: Text('phunny me'),
                   style: TextButton.styleFrom(
                     padding: EdgeInsets.all(3),
                     primary: Color.fromARGB(255, 248, 248, 248),
