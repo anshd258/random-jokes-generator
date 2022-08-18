@@ -31,27 +31,28 @@ class _ppostState extends State<ppost> {
   Widget build(BuildContext context) {
     etc();
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Color.fromARGB(255, 38, 38, 190),
+        home: Scaffold(
+      appBar: AppBar(
+        backgroundColor: Color.fromARGB(255, 38, 38, 190),
+        // ignore: prefer_const_constructors
+        title: Center(
           // ignore: prefer_const_constructors
-          title: Center(
+          child: Text(
+            'JOKES',
+            textAlign: TextAlign.center,
             // ignore: prefer_const_constructors
-            child: Text(
-              'JOKES',
-              textAlign: TextAlign.center,
-              // ignore: prefer_const_constructors
-              style: TextStyle(
-                fontSize: 30,
-                color: Color.fromARGB(255, 243, 239, 242),
-                fontWeight: FontWeight.bold,
-                wordSpacing: 1.5,
-                letterSpacing: 2.0,
-              ),
+            style: TextStyle(
+              fontSize: 30,
+              color: Color.fromARGB(255, 243, 239, 242),
+              fontWeight: FontWeight.bold,
+              wordSpacing: 1.5,
+              letterSpacing: 2.0,
             ),
           ),
         ),
-        body: Column(
+      ),
+      body: ListView(scrollDirection: Axis.vertical, children: [
+        Column(
           children: <Widget>[
             Container(
               width: double.infinity,
@@ -78,12 +79,12 @@ class _ppostState extends State<ppost> {
                     padding: EdgeInsets.all(3),
                     primary: Color.fromARGB(255, 248, 248, 248),
                     textStyle: const TextStyle(fontSize: 15),
-                    backgroundColor: Color.fromARGB(239, 7, 122, 47),
+                    backgroundColor: Color.fromARGB(238, 72, 194, 114),
                   ),
                 )),
           ],
         ),
-      ),
-    );
+      ]),
+    ));
   }
 }
